@@ -1,9 +1,11 @@
-.tour{
+.tour{ 
+    
 }
 
 .fiesta{
     display: flex;
     flex-direction: row;
+   
 }
 
 .concierto{
