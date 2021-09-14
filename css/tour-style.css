@@ -1,0 +1,68 @@
+
+.tour{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 30%;
+    
+    
+}
+.info-tour{
+    display: flex;
+    
+}
+.title{
+    font-size:100px;
+    
+}
+.subtitle{
+    font-size: x-large;
+   
+}
+.date{
+    margin-right: 5%;
+    text-align: center;
+    line-height: 1%;
+}
+
+.concerts{
+    display: flex;
+     
+    
+}
+
+.concert-item{
+    display: flex;
+   
+    width: 500px;   
+}
+.arrow{
+margin-left: 50px;
+}
+.day{
+    margin-top: 25px;
+    font-size:70px ;
+font-weight: bolder;
+}
+.month{
+font-weight: bolder; 
+font-size:30px ;
+}
+.name{
+    margin-top: 0px;
+    padding: 0px;
+    font-size:20px ;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.place{
+    font-size:20px ;
+    line-height: 0%;
+  
+    
+}
+.description{
+    font-size:15px ;
+    margin-top: 0px;
+    opacity: 60%;
+}
