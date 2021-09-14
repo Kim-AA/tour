@@ -35,22 +35,30 @@
 
 .concerts{
     display: flex;
-   
-    
+      
+}
+.info-concerts{
+    width: 175px;
+
 }
 .scroll-concerts{
     display: flex;
     overflow: auto;
-    width: 70%;
+    white-space: nowrap;
+    width: 60%;
+    padding: 2%;
+
 }
+
 .concert-item{
     display: flex;
-   
+    margin-right: 20px;
     width: 500px;  
-   
+    
 }
 .arrow{
 margin-left: 50px;
+margin-right: 50px;
 }
 .day{
     margin-top: 25px;
@@ -95,4 +103,10 @@ font-size:30px ;
     width: 20px;
     height: 20px;
     color: white;
+}
+.boxBoton{
+    display: flex;
+    
+    padding-top: 30px;
+    padding-left: 30px;
 }
