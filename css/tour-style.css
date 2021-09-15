@@ -35,8 +35,7 @@
     overflow-x: auto;
     white-space: nowrap;
     width: 60%;
-    padding: 2%;
-    cursor: pointer;  
+    padding: 2%; 
 }
 
 .tour--concerts-scroll::-webkit-scrollbar {
