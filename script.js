@@ -53,7 +53,7 @@ let tourConcertItems=[
         place:"Tokio",
         description:"blibli",
     },
-    
+
     {
         id:"4",
         day:"23",
@@ -66,23 +66,24 @@ let tourConcertItems=[
 ]
 function printTourListItems(item , index){
     scrollConcerts.innerHTML  +=`
-    <div><div class="tour--concert-item">
-    <div class="concert--item-date">
-        <h2 class="concert--item-day">${item.day}</h2>
-        <p class="concert--item-month">${item.month}</p>
-    </div>
-    
-    <div class="concert--item-info">
-        <h4 class="item--info-name">${item.name}</h4>
-        <p class="item--info-place">${item.place}</p>
-        <p class="item--info-description">${item.description}</p>
-
-    </div>
-    <div class="concert--arrow-button">
-    <img src="img/arrow-forward.png" alt="flecha">
+    <div class="tour--concert-item">
+        <div class="concert--item-date">
+        <img class="concert-icon" src="img/descarga.png" alt="triángulo">
+            <h2 class="concert--item-day">${item.day}</h2>
+            <p class="concert--item-month">${item.month}</p>
         </div>
-     </div>   
-     </div>`
+    
+        <div class="concert--item-info">
+            <h4 class="item--info-name">${item.name}</h4>
+            <p class="item--info-place">${item.place}</p>
+            <p class="item--info-description">${item.description}</p>
+        </div>
+
+        <div class="concert--arrow-button">
+        <img src="img/arrow-forward.png" alt="flecha">
+        </div>
+  
+    </div>`
     
 }
     function loadConcerts(){

@@ -70,7 +70,18 @@ body{
 .tour--concert-item{
     display: flex;
     margin-right: 20px;
-    width: 500px; 
+    width: 500px;
+     
+}
+.concert-icon{
+    height: 35px;
+    margin-bottom: 60%;
+}
+.concert-text{
+    display: flex;
+    margin-right: 20px;
+    width: 500px;
+    margin-top: 15%;
 }
 .concert--item-date{
     margin-right: 5%;
@@ -91,6 +102,7 @@ font-weight: bolder
     padding-right: 50px;
     border-bottom: 2px solid rgb(139, 139, 139);
     width: 175px;
+    margin-top: 18%;
 }
 
 .item--info-name{
@@ -112,6 +124,7 @@ font-weight: bolder
 }
 
 .concert--arrow-button{
+    margin-top: 18%;
     padding-left: 50px;
     margin-right: 50px;
     border-bottom: 2px solid rgb(139, 139, 139);
