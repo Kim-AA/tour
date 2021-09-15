@@ -4,90 +4,107 @@
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     margin-left: 20%;
-    
-      
+  
 }
-.chiva{
-  margin-left: 150px;
-  width: 40%;
-  margin-top: 10%;
-}
-.info-tour{
+.tour--info{
     display: flex;
     margin-bottom: 10%;
 }
-.title{
+
+.tour--info-title{
     font-size:200px;
     margin-bottom: 0px;
 }
-.subtitle{
+.tour--info-subtitle{
     font-size: x-large;
     font-weight: bolder;
     line-height:0%;
     margin-left: 50px;
     margin-bottom: 0px;
 }
-.date{
-    margin-right: 5%;
-    text-align: center;
-    line-height: 1%;
+.tour--img-chiva{
+    margin-left: 150px;
+    width: 40%;
+    margin-top: 10%;
 }
-
-.concerts{
+.tour--concerts{
+    display: flex; 
+}
+.tour--concerts-scroll{
     display: flex;
-      
-}
-.info-concerts{
-    width: 175px;
-
-}
-.scroll-concerts{
-    display: flex;
-    overflow: auto;
+    overflow-x: auto;
     white-space: nowrap;
     width: 60%;
     padding: 2%;
-
+    cursor: pointer;  
 }
 
-.concert-item{
+.tour--concerts-scroll::-webkit-scrollbar {
+    height: 5px;
+    background: #fff;
+ 
+}
+.tour--concerts-scroll::-webkit-scrollbar-thumb {
+     
+    height: 5px;
+    background:grey;
+    opacity: 40%;
+}
+.tour--concert-item{
     display: flex;
     margin-right: 20px;
-    width: 500px;  
-    
+    width: 500px; 
 }
-.arrow{
-margin-left: 50px;
-margin-right: 50px;
-}
-.day{
+.concert--item-date{
+    margin-right: 5%;
+    text-align: center;
+    line-height: 1%;
+}  
+.concert--item-day {
     margin-top: 25px;
     font-size:70px ;
-font-weight: bolder;
+font-weight: bolder
 }
-.month{
-font-weight: bolder; 
-font-size:30px ;
+.concert--item-month{
+    font-weight: bolder; 
+    font-size:30px ;  
 }
-.name{
+
+.concert--item-info{
+    padding-right: 50px;
+    border-bottom: 2px solid rgb(139, 139, 139);
+    width: 175px;
+}
+
+.item--info-name{
     margin-top: 0px;
     padding: 0px;
     font-size:20px ;
     font-weight: bold; margin-bottom: 90%; 
     margin-bottom: 40px;
 }
-.place{
+.item--info-place{
     font-size:20px ;
     line-height: 0%;
-  
-    
+     
 }
-.description{
+.item--info-description{
     font-size:15px ;
     margin-top: 0px;
     opacity: 60%;
 }
-.arrowBtn{
+
+.concert--arrow-button{
+    padding-left: 50px;
+    margin-right: 50px;
+    border-bottom: 2px solid rgb(139, 139, 139);
+}
+.tour--concerts-button{
+    display: flex;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.concerts--button-arrow{
     display: flex;
     flex-direction: row-reverse;
     
@@ -99,14 +116,15 @@ font-size:30px ;
    background-color:rgb(66, 61, 61) ;
    color: white;
 }
-.flecha{
+.concerts--button-img{
     width: 20px;
     height: 20px;
-    color: white;
-}
-.boxBoton{
-    display: flex;
     
-    padding-top: 30px;
-    padding-left: 30px;
+}
+
+.active{
+    background-color: white;
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
 }
