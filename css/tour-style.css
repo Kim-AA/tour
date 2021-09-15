@@ -27,6 +27,9 @@
     width: 40%;
     margin-top: 10%;
 }
+.tour--concerts-links{
+    display: flex;
+}
 .tour--concerts{
     display: flex; 
 }
@@ -39,15 +42,15 @@
 }
 
 .tour--concerts-scroll::-webkit-scrollbar {
-    height: 5px;
+    height: 20px;
     background: #fff;
- 
+    opacity: 80%;
 }
 .tour--concerts-scroll::-webkit-scrollbar-thumb {
      
-    height: 5px;
-    background:grey;
-    opacity: 40%;
+    height: 20px;
+    background:rgb(235, 233, 233);
+    opacity: 80%;
 }
 .tour--concert-item{
     display: flex;
