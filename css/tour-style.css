@@ -1,14 +1,19 @@
-
+body{
+    padding-right: 5%;
+    
+}
 .tour{
     display: flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     margin-left: 20%;
+    position:absolute;
+    
   
 }
 .tour--info{
     display: flex;
-    margin-bottom: 10%;
+    
 }
 
 .tour--info-title{
@@ -16,15 +21,17 @@
     margin-bottom: 0px;
 }
 .tour--info-subtitle{
-    font-size: x-large;
-    font-weight: bolder;
+    font-size: 30px; 
     line-height:0%;
     margin-left: 50px;
     margin-bottom: 0px;
 }
+.tour--info-header{
+    margin-top: 5%;
+}
 .tour--img-chiva{
-    margin-left: 150px;
-    width: 40%;
+    
+    width: 30%;
     margin-top: 10%;
 }
 .tour--concerts-links{
@@ -33,12 +40,19 @@
 .tour--concerts{
     display: flex; 
 }
+.tour--line-div{
+    margin: 10px;
+    height: 50%;
+    width: 10%;
+}
 .tour--concerts-scroll{
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-    width: 60%;
-    padding: 2%; 
+    height: 30%;
+    width: 42%;
+    padding-top: 2%;
+    cursor: pointer;  
 }
 
 .tour--concerts-scroll::-webkit-scrollbar {
@@ -49,6 +63,7 @@
 .tour--concerts-scroll::-webkit-scrollbar-thumb {
      
     height: 20px;
+    
     background:rgb(235, 233, 233);
     opacity: 80%;
 }
@@ -102,9 +117,14 @@ font-weight: bolder
     border-bottom: 2px solid rgb(139, 139, 139);
 }
 .tour--concerts-button{
+
     display: flex;
     padding-top: 30px;
     padding-left: 30px;
+    position: absolute;
+    top: 82%;
+    right: 50%;
+
 }
 .concerts--button-arrow{
     display: flex;
