@@ -63,10 +63,14 @@ let tourConcertItems=[
     }
 
 ]
+
+
 function printTourListItems(item , index){
-    scrollConcerts.innerHTML  +=`
+           
+            scrollConcerts.innerHTML  +=`
     <div><div class="tour--concert-item">
     <div class="concert--item-date">
+    
         <h2 class="concert--item-day">${item.day}</h2>
         <p class="concert--item-month">${item.month}</p>
     </div>
@@ -90,4 +94,4 @@ function printTourListItems(item , index){
     
     }
     loadConcerts();
-   
+  

@@ -40,10 +40,13 @@ body{
 .tour--concerts{
     display: flex; 
 }
-.tour--line-div{
-    margin: 10px;
-    height: 50%;
-    width: 10%;
+
+.tour--line-img{
+    margin-top: 20%;
+    margin-left: 10px;
+    width: 90%;
+    border: none;
+
 }
 .tour--concerts-scroll{
     display: flex;
@@ -71,6 +74,9 @@ body{
     display: flex;
     margin-right: 20px;
     width: 500px; 
+    border-top:5px solid #000;
+    
+    outline-offset: -10px;
 }
 .concert--item-date{
     margin-right: 5%;
