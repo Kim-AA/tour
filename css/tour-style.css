@@ -77,11 +77,12 @@ body{
     border-top:8px solid #000;
     
 
+
      
 }
 .concert-icon{
     height: 35px;
-    margin-bottom: 60%;
+  
 }
 .concert-text{
     display: flex;
