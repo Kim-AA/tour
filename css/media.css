@@ -8,10 +8,12 @@
  }
 
 h1.tour--info-title{
-   font-size: 200px;
+   font-size: 150px;
+   margin-top: 5%;
 }
 p.tour--info-subtitle{
-    font-size: 30px;
-    margin-top: 2%;
+    font-size: 25px;
+    margin-top: 0%;
+    margin-left: 2%;
 }
 }
