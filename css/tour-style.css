@@ -6,6 +6,7 @@
     font-family: 'Poppins', sans-serif;
     width: 100%;
     position:absolute;
+    padding: 12px;
     
   
 }
@@ -147,10 +148,10 @@ color: #2E2B26;
 .tour--concerts-button{
     
     display: flex;
-    padding-top: 30px;
-    padding-left: 30px;
+   
+   
     position: absolute;
-    top: 82%;
+ 
     right: 50%;
 
 }
