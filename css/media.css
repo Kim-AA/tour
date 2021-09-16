@@ -3,10 +3,35 @@
  .tour--info{
     display: flex;
     flex-direction: column;
-    margin-right: 20%;
-    
+    margin-right: 40%;
+   
     
  }
 
+h1.tour--info-title{
+   font-size: 100px;
+   margin-top: 2%;
+}
+p.tour--info-subtitle{
+    display: none;
+  
+}
+.tour--img-chiva{
+}
+
+div.tour--concerts-scroll{
+    width: 15%;
+    height: 15%;
+}
+
+div.tour--concert-item {
+    font-size: 2px;
+}
+
+div.tour-concerts-button{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
 
 }
