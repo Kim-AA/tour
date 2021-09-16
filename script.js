@@ -31,7 +31,7 @@ let scrollConcerts=document.getElementById("tour--concerts-scroll");
 let tourConcertItems=[
     {
         id:"0",
-        day:"30",
+        day:"03",
         month:"Oct",
         name:"Festival Atlantikaldia",
         place:"Munich",
