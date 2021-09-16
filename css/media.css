@@ -23,13 +23,50 @@ div.tour--concerts-scroll{
 }
 
 div.tour--concert-item {
-    font-size: 2px;
+    border-top: solid 10px #c4c4c4;
 }
-
 div.tour-concerts-button{
     position: absolute;
     top: 10%;
     left: 0%;
 }
+
+h2.concert--item-day {
+    font-size:30px ;
+}
+p.concert--item-month{
+    font-size:20px ;
+    margin-top: 5%;
+}
+div.concert--item-info{
+    margin-top: 18%;
+    width: 80px;
+
+}
+h4.item--info-name{
+    font-size:14px ;
+    margin-bottom: 2%;
+}
+p.item--info-place{
+    font-size:10px ;
+     
+}
+p.item--info-description{
+    font-size:8px ;
+
+}
+
+div.concert--arrow-button{
+    margin-top: 18%;
+
+}
+
+img.concert-icon{
+    margin-bottom: 120%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10%;
+}
+
 
 }
