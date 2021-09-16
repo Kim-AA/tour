@@ -70,7 +70,7 @@ function printTourListItems(item , index){
     scrollConcerts.innerHTML  +=`
     <div class="tour--concert-item">
         <div class="concert--item-date">
-        <img class="concert-icon" src="img/descarga.png" alt="triángulo">
+        <img class="concert-icon" src="img/triangle.jpg" alt="triángulo">
             <h2 class="concert--item-day">${item.day}</h2>
             <p class="concert--item-month">${item.month}</p>
         </div>
