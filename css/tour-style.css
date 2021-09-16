@@ -104,9 +104,11 @@ font-weight: bolder;
 color: #2E2B26;
 }
 .concert--item-month{
-    font-weight: bolder; 
-    font-size:30px ;  
+    font-weight:bold; 
+    font-size:30px ;
+
     color: #2E2B26;
+    margin-top:-10px;
 }
 
 .concert--item-info{
@@ -121,8 +123,9 @@ color: #2E2B26;
     margin-top: 0px;
     padding: 0px;
     font-size:20px ;
-    font-weight: bold; margin-bottom: 90%; 
-    margin-bottom: 40px;
+    font-weight: bold;
+     margin-bottom: 90%; 
+    margin-bottom: 30px;
 }
 .item--info-place{
     font-size:20px ;
@@ -153,13 +156,12 @@ color: #2E2B26;
 }
 .concerts--button-arrow{
     display: flex;
-    flex-direction: row-reverse;
-    
+    flex-direction: row-reverse; 
    width: 100px;
    height: 80px;
    align-items: center;
    justify-content: space-between;
-   padding-left: 10px;
+   padding-left: 17px;
    background-color:#2E2E2E;
    color: white;
 }
