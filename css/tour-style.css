@@ -14,7 +14,7 @@ body{
 }
 .tour--info{
     display: flex;
-    
+    background-color: white;
 }
 
 .tour--info-title{
@@ -39,7 +39,7 @@ body{
 }
 .tour--img-chiva{
     mix-blend-mode: luminosity;
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
+   
     width: 30%;
 }
 .tour--concerts-links{
