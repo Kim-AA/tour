@@ -4,10 +4,9 @@
     display: flex;
     flex-direction: column;
     margin-right: 20%;
-    margin-top: 0%;
+    
+    
  }
 
- .tour--info-title{
-   font-size: small;
-}
+
 }
