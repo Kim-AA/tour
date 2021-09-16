@@ -1,3 +1,4 @@
+@import url(media.css);
 body{
     padding-right: 5%;
     
@@ -17,33 +18,35 @@ body{
 }
 
 .tour--info-title{
-    font-size:200px;
+    font-size:300px;
     margin-bottom: 0px;
+    font-weight:780;
+    color: #2E2B26;
+    
 }
 .tour--info-subtitle{
-    font-size: 30px; 
+    font-size: 50px;
+    font-weight: bold; 
     line-height:0%;
     margin-left: 50px;
     margin-bottom: 0px;
+    color: #2E2B26;
+    margin-top: -10px;
 }
 .tour--info-header{
-    margin-top: 5%;
+    color: #2E2B26;
+    margin-bottom: 60px;
 }
 .tour--img-chiva{
-    
+    mix-blend-mode: luminosity;
+   transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 30%;
-    margin-top: 10%;
 }
 .tour--concerts-links{
     display: flex;
 }
 .tour--concerts{
     display: flex; 
-}
-.tour--line-div{
-    margin: 10px;
-    height: 50%;
-    width: 10%;
 }
 .tour--concerts-scroll{
     display: flex;
@@ -54,7 +57,6 @@ body{
     padding-top: 2%;
     cursor: pointer;  
 }
-
 .tour--concerts-scroll::-webkit-scrollbar {
     height: 20px;
     background: #fff;
@@ -63,40 +65,46 @@ body{
 .tour--concerts-scroll::-webkit-scrollbar-thumb {
      
     height: 20px;
-    
+    display: none;
     background:rgb(235, 233, 233);
     opacity: 80%;
 }
 .tour--concert-item{
     display: flex;
-    margin-right: 20px;
+    margin-right: 0px;
     width: 500px;
-    border-top: solid;
+    border-top: solid 15px #c4c4c4;
+  
      
 }
-.concert-icon{
-    height: 35px;
+.concert-icon{ 
     margin-bottom: 60%;
+    height: 35px;
+    color: #2E2B26;
 }
 .concert-text{
     display: flex;
     margin-right: 20px;
     width: 500px;
     margin-top: 15%;
+    color: #2E2B26;
 }
 .concert--item-date{
     margin-right: 5%;
     text-align: center;
     line-height: 1%;
+    color: #2E2B26;
 }  
 .concert--item-day {
     margin-top: 25px;
     font-size:70px ;
-font-weight: bolder
+font-weight: bolder;
+color: #2E2B26;
 }
 .concert--item-month{
     font-weight: bolder; 
     font-size:30px ;  
+    color: #2E2B26;
 }
 
 .concert--item-info{
@@ -104,6 +112,7 @@ font-weight: bolder
     border-bottom: 2px solid rgb(139, 139, 139);
     width: 175px;
     margin-top: 18%;
+
 }
 
 .item--info-name{
@@ -149,7 +158,7 @@ font-weight: bolder
    align-items: center;
    justify-content: space-between;
    padding-left: 10px;
-   background-color:rgb(66, 61, 61) ;
+   background-color:#2E2E2E;
    color: white;
 }
 .concerts--button-img{
