@@ -7,7 +7,11 @@
     margin-top: 0%;
  }
 
- .tour--info-title{
-   font-size: small;
+h1.tour--info-title{
+   font-size: 200px;
+}
+p.tour--info-subtitle{
+    font-size: 30px;
+    margin-top: 2%;
 }
 }
