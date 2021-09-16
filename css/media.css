@@ -1,5 +1,6 @@
 @media screen and (max-width: 360px){
  .tour--img-chiva{
+     display: flex;
     top:40%;
    left: -4%;
    height:20%;

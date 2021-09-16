@@ -81,6 +81,7 @@ body{
     margin-bottom: 60%;
     height: 35px;
     color: #2E2B26;
+    margin-top: -1;
 }
 .concert-text{
     display: flex;
