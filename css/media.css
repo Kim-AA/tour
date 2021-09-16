@@ -16,4 +16,20 @@ p.tour--info-subtitle{
     margin-top: 0%;
     margin-left: 2%;
 }
+
+div.tour--concerts-scroll{
+    width: 20%;
+    height: 20%;
+}
+
+div.tour--concert-item {
+    font-size: 2px;
+}
+
+div.tour-concerts-button{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
 }
