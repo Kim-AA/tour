@@ -39,7 +39,7 @@ body{
 }
 .tour--img-chiva{
     mix-blend-mode: luminosity;
-   transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
     width: 30%;
 }
 .tour--concerts-links{
@@ -79,10 +79,11 @@ body{
 }
 .concert-icon{ 
     margin-top: -1%;
-    margin-bottom: 60%;
+    margin-bottom: 100%;
     height: 35px;
     color: #2E2B26;
     margin-top: -1;
+
 }
 .concert-text{
     display: flex;
@@ -115,15 +116,15 @@ color: #2E2B26;
     padding-right: 50px;
     border-bottom: 2px solid rgb(139, 139, 139);
     width: 175px;
-    margin-top: 18%;
+    margin-top: 25%;
 
 }
 
 .item--info-name{
     margin-top: 0px;
     padding: 0px;
-    font-size:20px ;
-    font-weight: bold;
+    font-size:24px ;
+    font-weight:bold;
      margin-bottom: 90%; 
     margin-bottom: 30px;
 }
@@ -139,7 +140,7 @@ color: #2E2B26;
 }
 
 .concert--arrow-button{
-    margin-top: 18%;
+    margin-top: 25%;
     padding-left: 50px;
     margin-right: 50px;
     border-bottom: 2px solid rgb(139, 139, 139);

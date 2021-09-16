@@ -65,7 +65,6 @@ let tourConcertItems=[
 
 ]
 
-
 function printTourListItems(item , index){
     scrollConcerts.innerHTML  +=`
     <div class="tour--concert-item">
@@ -80,7 +79,6 @@ function printTourListItems(item , index){
             <p class="item--info-place">${item.place}</p>
             <p class="item--info-description">${item.description}</p>
         </div>
-
         <div class="concert--arrow-button">
         <img src="img/arrow-forward.png" alt="flecha">
         </div>
