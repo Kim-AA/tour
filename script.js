@@ -95,15 +95,21 @@ slider.addEventListener("mousemove", (e) => {
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
     console.log({x, startX});
-    const walk = (x - startX) * 3;
+    const walk = (x - startX) * 2;
     console.log(walk);
     slider.scrollLeft = scrollLeft - walk;
 });
 
 let verMas = document.querySelector('.tour--concerts-button');
+let concertsColumn = document.querySelector("#concerts-column");
 
-verMas.addEventListener("click", myFunction);
+verMas.addEventListener("click", loadConcertsColumn);
 
-function myFunction() {
-  alert ("Hello World!");
+function loadConcertsColumn(){
+    concertsColumn.innerHTML = "",
+    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    console.log(tourConcertItems);
 }
+
+loadConcertsColumn();
+console.log(loadConcertsColumn);

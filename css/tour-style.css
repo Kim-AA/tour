@@ -1,4 +1,7 @@
 @import url(media.css);
+.concerts-column{
+    display: flex;
+}
 
 .tour{
     display: flex;
