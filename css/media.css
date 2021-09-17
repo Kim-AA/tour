@@ -1,16 +1,16 @@
 @media screen and (max-width: 360px){
- 
+
  .tour--info{
     display: flex;
     flex-direction: column;
-    margin-right: 40%;
-   
-    
+    width: 100%;
+
  }
 
 h1.tour--info-title{
-   font-size: 100px;
-   margin-top: 2%;
+   font-size: 80px;
+    margin: 20px;
+ 
 }
 p.tour--info-subtitle{
     display: none;
@@ -19,8 +19,9 @@ p.tour--info-subtitle{
 
 
 div.tour--concerts-scroll{
-    width: 15%;
-    height: 15%;
+  width: 60%;
+  height: 15%;
+   
 }
 
 div.tour--concert-item {
@@ -29,8 +30,8 @@ div.tour--concert-item {
 }
 div.tour--concerts-button{
     position: absolute;
-    top: 85%;
-    left: 18%;
+    top:80%;
+    left: 65%;
 }
 button.concerts--button-arrow{ 
    width: 70px;
@@ -45,6 +46,7 @@ img.concerts--button-img{
 
 h2.concert--item-day {
     font-size:30px ;
+    margin-top: 24px;
 }
 p.concert--item-month{
     font-size:20px ;
@@ -52,7 +54,7 @@ p.concert--item-month{
 }
 div.concert--item-info{
     margin-top: 18%;
-    width: 80px;
+    width: 70px;
 
 }
 h4.item--info-name{
@@ -60,11 +62,11 @@ h4.item--info-name{
     margin-bottom: 2%;
 }
 p.item--info-place{
-    font-size:10px ;
+    font-size:12px ;
      
 }
 p.item--info-description{
-    font-size:8px ;
+    font-size:10px ;
 
 }
 
