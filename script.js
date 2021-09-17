@@ -99,3 +99,11 @@ slider.addEventListener("mousemove", (e) => {
     console.log(walk);
     slider.scrollLeft = scrollLeft - walk;
 });
+
+let verMas = document.querySelector('.tour--concerts-button');
+
+verMas.addEventListener("click", myFunction);
+
+function myFunction() {
+  alert ("Hello World!");
+}
