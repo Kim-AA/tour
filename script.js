@@ -1,28 +1,4 @@
-
-
 let scrollConcerts=document.getElementById("tour--concerts-scroll");
-let pagUno= document.getElementById("pagUno");
-let pagDos= document.getElementById("pagDos");
-function cambiarPagina(){
-    ocultarPagUno();
-    mostrarPagDos();
-    loadConcertPagDos();
-
-}
-function ocultarPagUno(){
-    pagUno.classList.add('ocultar');
-}
-function mostrarPagDos(){
-
-    pagUno.classList.remove('tourDos_bloqueado');
-    pagDos.classList.add('desbloqueado');
-}
-function volverAPagUno() {
-    pagDos.classList.remove('desbloqueado');
-    pagUno.classList.remove('ocultar');
-}
-
-
 let tourConcertItems=[
     {
         id:"1",
@@ -88,20 +64,28 @@ function printTourListItems(item , index){
     
     }
     loadConcerts();
-    function upDateConcert() {
+//     function upDateConcert() {
 
-    concert = tourConcertItems.filter(element => element.id>0)
-        }
-        upDateConcert();
+//     concert = tourConcertItems.filter(element => element.id>0)
+//         }
+// //         upDateConcert();
         
-        function totalDeItems(){
-            let concertItem = document.getElementById('loadConcertItem');
+// //         function totalDeItems(){
+//             let concertItem = document.getElementById('loadConcertItem');
             
-                concertItem.innerHTML = concert.lenght
-        }
-console.log(concert);
+//                 concertItem.innerHTML = concert.length
+//         }
+const slider = document.querySelector(".tour--concerts-scroll");
 
-const slider = document.querySelector(".scroll-concerts");
+slider.addEventListener("wheel", (event) => {
+    console.log(event)
+    event.preventDefault();
+    slider.scrollLeft += event.deltaY;
+});
+
+// console.log(concert);
+
+
 let isDown = false;
 let startX;
 let scrollLeft;
@@ -120,65 +104,49 @@ slider.addEventListener("mouseup", () => {
      e.preventDefault();
      const x = e.pageX - slider.offsetLeft;
     console.log({x, startX});
-   const walk = (x - startX) * 3;
+   const walk = (x - startX) * 2;
     slider.scrollLeft = scrollLeft - walk;
  });
 
 let verMas = document.querySelector(".tour--concerts-button");
-verMas.addEventListener("onclick", myFunction)
-function myFunction(){
-    alert ("hola Pag dos");
+let pagUno= document.getElementById("pagUno");
+let pagDos= document.getElementById("pagDos");
+verMas.addEventListener("click", cambiarPagina)
+
+
+function cambiarPagina(){
+    ocultarPagUno();
+    mostrarPagDos();
+    // loadConcertPagDos();
+
 }
+    
 
 
 
-  
-const slider = document.querySelector(".tour--concerts-scroll");
+// let verMas = document.querySelector('.tour--concerts-button');
+// let concertsColumn = document.querySelector("#concerts-column");
 
-slider.addEventListener("wheel", (event) => {
-    console.log(event)
-    event.preventDefault();
-    slider.scrollLeft += event.deltaY;
-});
+// verMas.addEventListener("click", loadConcertsColumn);
 
-let isDown = false;
-let startX;
-let scrollLeft;
+// function loadConcertsColumn(){
+//     concertsColumn.innerHTML = "",
+//     tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+//     console.log(tourConcertItems);
+// }
 
-slider.addEventListener("mousedown", (e) => {
-    isDown = true;
-    slider.classList.add('active');
-    startX = e.pageX - slider.offsetLeft;
-    scrollLeft = slider.scrollLeft;
-});
-slider.addEventListener("mouseleave", () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-slider.addEventListener("mouseup", () => {
-    isDown = false;
-    slider.classList.remove('active');
-});
-slider.addEventListener("mousemove", (e) => {
-    if(!isDown) return;
-    e.preventDefault();
-    const x = e.pageX - slider.offsetLeft;
-    console.log({x, startX});
-    const walk = (x - startX) * 2;
-    console.log(walk);
-    slider.scrollLeft = scrollLeft - walk;
-});
+// loadConcertsColumn();
+// console.log(loadConcertsColumn);
 
-let verMas = document.querySelector('.tour--concerts-button');
-let concertsColumn = document.querySelector("#concerts-column");
-
-verMas.addEventListener("click", loadConcertsColumn);
-
-function loadConcertsColumn(){
-    concertsColumn.innerHTML = "",
-    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
-    console.log(tourConcertItems);
+function ocultarPagUno(){
+    pagUno.classList.add('ocultar');
 }
+function mostrarPagDos(){
 
-loadConcertsColumn();
-console.log(loadConcertsColumn);
+    pagUno.classList.remove('tourDos_bloqueado');
+    pagDos.classList.add('desbloqueado');
+}
+function volverAPagUno() {
+    pagDos.classList.remove('desbloqueado');
+    pagUno.classList.remove('ocultar');
+}

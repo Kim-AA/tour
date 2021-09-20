@@ -4,13 +4,15 @@
     max-width: 1080px;
     
   }
-  
+
   .desbloqueado {
-    display: inherit;
+    display: flex;
     max-width: 1080px;
    
   }
-  
+.ocultar{
+      display: none;
+  }
 .concerts-column{
     display: flex;
 }
