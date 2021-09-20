@@ -97,7 +97,7 @@ function printTourListItems(item , index){
         function totalDeItems(){
             let concertItem = document.getElementById('loadConcertItem');
             
-                concertItem.innerHTML = concert.lenght
+                concertItem.innerHTML = concert.length
         }
 console.log(concert);
 
