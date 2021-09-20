@@ -54,7 +54,7 @@ function printTourListItems(item, index){
         <img src="img/arrow-forward.png" alt="flecha">
         </div>
   
-    </div>`
+    </div>`;
     console.log(tourConcertItems);
     
 }
