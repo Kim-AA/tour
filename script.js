@@ -1,5 +1,6 @@
 let scrollConcerts=document.getElementById("tour--concerts-scroll");
-let tourConcertItems=[
+
+tourConcertItems=[
     {
         id:"1",
         day:"03",
@@ -58,7 +59,11 @@ function printTourListItems(item, index){
     console.log(tourConcertItems);
     
 }
-
+    function loadConcerts(){
+    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    
+    }
+    loadConcerts();
 //     function upDateConcert() {
 
 //     concert = tourConcertItems.filter(element => element.id>0)
