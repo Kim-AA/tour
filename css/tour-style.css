@@ -5,16 +5,19 @@
     
   }
 
-  .desbloqueado {
+  /* .desbloqueado {
     display: flex;
     max-width: 1080px;
    
-  }
-.ocultar{
-      display: none;
-  }
+  } */
+/* .ocultar{
+ 
+  display: none;
+ 
+  } */
 .concerts-column{
-    display: flex;
+    display: none;
+   
 }
 
 .tour{
@@ -169,7 +172,7 @@ color: #2E2B26;
     top:86%;
 
 }
-
+.concerts--button-arrow{
 display: flex;
     flex-direction: row-reverse; 
    width: 100%;
