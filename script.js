@@ -107,45 +107,22 @@ slider.addEventListener("mouseup", () => {
    const walk = (x - startX) * 2;
     slider.scrollLeft = scrollLeft - walk;
  });
-
-let verMas = document.querySelector(".tour--concerts-button");
-let pagUno= document.getElementById("pagUno");
-let pagDos= document.getElementById("pagDos");
-verMas.addEventListener("click", cambiarPagina);
-
-function ocultarPagUno(){
-    pagUno.classList.remove('tour');
-}
-
-function mostrarPagDos(){
-    // pagDos.innerHTML = "",
-    // tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
-    // console.log(tourConcertItems);
-
-    pagUno.classList.add('tourDos-bloqueado');
-    pagDos.classList.add('desbloqueado');
-}
-function volverAPagUno() {
-    pagDos.classList.remove('desbloqueado');
-    pagUno.classList.remove('ocultar');
-}
-
-function cambiarPagina(){
-    ocultarPagUno();
-    mostrarPagDos();
-    // loadConcertPagDos();
-
-}
-console.log(mostrarPagDos);
-let concertsColumn = document.querySelector("#concerts-column");
-
-
-
-function loadConcertsColumn(){
-    pagDos.innerHTML = "",
-    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
-    console.log(tourConcertItems);
-}
-
-loadConcertsColumn();
-console.log(loadConcertsColumn);
+ let tourInfo = document.querySelector(".tour-info");
+ function showDetails(item, index){
+    tourInfo.innerHTML  +=`
+    <div class="tour--concert-item">
+        <div class="concert--item-date">
+        <img class="concert-icon" src="img/Polygon 1.png" alt="triángulo">
+            <h2 class="concert--item-day">${item.day}</h2>
+            <p class="concert--item-month">${item.month}</p>
+        </div>
+    
+        <div class="concert--item-info">
+            <h4 class="item--info-name">${item.name}</h4>
+            <p class="item--info-place">${item.place}</p>
+            <p class="item--info-description">${item.description}</p>
+        </div>
+      
+    </div>`};
+    function loadConcertDetails(){
+        tourConcertItems.forEach((item, index)=>showDetails(item, index ));}
