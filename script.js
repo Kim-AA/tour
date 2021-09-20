@@ -1,7 +1,31 @@
+
+
 let scrollConcerts=document.getElementById("tour--concerts-scroll");
+let pagUno= document.getElementById("pagUno");
+let pagDos= document.getElementById("pagDos");
+function cambiarPagina(){
+    ocultarPagUno();
+    mostrarPagDos();
+    loadConcertPagDos();
+
+}
+function ocultarPagUno(){
+    pagUno.classList.add('ocultar');
+}
+function mostrarPagDos(){
+
+    pagUno.classList.remove('tourDos_bloqueado');
+    pagDos.classList.add('desbloqueado');
+}
+function volverAPagUno() {
+    pagDos.classList.remove('desbloqueado');
+    pagUno.classList.remove('ocultar');
+}
+
+
 let tourConcertItems=[
     {
-        id:"0",
+        id:"1",
         day:"03",
         month:"Oct",
         name:"Festival Atlantikaldia",
@@ -9,7 +33,7 @@ let tourConcertItems=[
         description:"blabla",
     },
     {
-        id:"1",
+        id:"2",
         day:"03",
         month:"Nov",
         name:"Festival Atlantikaldia",
@@ -55,6 +79,7 @@ function printTourListItems(item , index){
         </div>
   
     </div>`
+    console.log(tourConcertItems);
     
 }
     function loadConcerts(){
@@ -63,6 +88,50 @@ function printTourListItems(item , index){
     
     }
     loadConcerts();
+    function upDateConcert() {
+
+    concert = tourConcertItems.filter(element => element.id>0)
+        }
+        upDateConcert();
+        
+        function totalDeItems(){
+            let concertItem = document.getElementById('loadConcertItem');
+            
+                concertItem.innerHTML = concert.lenght
+        }
+console.log(concert);
+
+const slider = document.querySelector(".scroll-concerts");
+let isDown = false;
+let startX;
+let scrollLeft;
+slider.addEventListener("mousedown", (e) => {
+isDown = true;   slider.classList.add('active');
+ startX = e.pageX - slider.offsetLeft;
+     scrollLeft = slider.scrollLeft;
+ });
+ 
+slider.addEventListener("mouseup", () => {
+     isDown = false;
+    slider.classList.remove('active');
+ });
+ slider.addEventListener("mousemove", (e) => {
+    if(!isDown) return;
+     e.preventDefault();
+     const x = e.pageX - slider.offsetLeft;
+    console.log({x, startX});
+   const walk = (x - startX) * 3;
+    slider.scrollLeft = scrollLeft - walk;
+ });
+
+let verMas = document.querySelector(".tour--concerts-button");
+verMas.addEventListener("onclick", myFunction)
+function myFunction(){
+    alert ("hola Pag dos");
+}
+
+
+
   
 const slider = document.querySelector(".tour--concerts-scroll");
 
@@ -95,15 +164,21 @@ slider.addEventListener("mousemove", (e) => {
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
     console.log({x, startX});
-    const walk = (x - startX) * 3;
+    const walk = (x - startX) * 2;
     console.log(walk);
     slider.scrollLeft = scrollLeft - walk;
 });
 
 let verMas = document.querySelector('.tour--concerts-button');
+let concertsColumn = document.querySelector("#concerts-column");
 
-verMas.addEventListener("click", myFunction);
+verMas.addEventListener("click", loadConcertsColumn);
 
-function myFunction() {
-  alert ("Hello World!");
+function loadConcertsColumn(){
+    concertsColumn.innerHTML = "",
+    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    console.log(tourConcertItems);
 }
+
+loadConcertsColumn();
+console.log(loadConcertsColumn);

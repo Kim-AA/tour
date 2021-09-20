@@ -11,7 +11,7 @@
 
 <body>
 
-    <section class="tour">
+    <section class="tour" id="pagUno">
         
         <div class="tour--info">
 
@@ -37,11 +37,39 @@
             <div class="tour--concerts-button">
 
                 <button class="concerts--button-arrow">
-                <img class="concerts--button-img" src="./img/arrow-white.png" />Ver Mas</button>
+                <img data-verMas="verMas" class="concerts--button-img" src="./img/arrow-white.png" />Ver Mas</button>
 
             </div>
+            <div id="loadConcertItem" class="loadConcertItem"></div>
                     
     </section>
+    <section class="tourDos-bloqueado" id="pagDos">
+        <div class="tour--info">
+
+            <div class="tour--info-header">
+
+            <h1 class="tour--info-title">Tour</h1>
+            <p class="tour--info-subtitle">Recorriendo el mundo sin papeles</p>
+
+            </div>
+
+            <img class="tour--img-chiva" src="./img/coche.png">
+            
+        </div>
+      
+        <div class="tour--concerts" id="tour-concerts">
+           
+            <div class="tour--concerts-scroll"id="tour--concerts-scroll">
+
+            </div>
+                 
+        </div> 
+    </section>
+             <section class="concerts-column" id="concerts-column">
+            <h1>hola</h1>
+            </section>       
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
