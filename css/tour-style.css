@@ -1,5 +1,16 @@
 @import url(media.css);
-
+.tourDos-bloqueado {
+    display: none;
+    max-width: 1080px;
+    
+  }
+  
+  .desbloqueado {
+    display: inherit;
+    max-width: 1080px;
+   
+  }
+  
 .tour{
     display: flex;
     flex-direction: column;
@@ -7,7 +18,7 @@
     width: 100%;
     position:absolute;
     padding: 20px;
-    
+    margin: 20px;
   
 }
 .tour--info{
@@ -29,7 +40,7 @@
     font-weight: bold; 
     margin-left: 60px;
     color: #2E2B26;
-    margin-top: -10px;
+   
 }
 .tour--info-header{
     color: #2E2B26;
@@ -38,7 +49,7 @@
 .tour--img-chiva{
     mix-blend-mode: luminosity;
    margin-top: 10%;
-    width: 30%;
+  
 }
 .tour--concerts-links{
     display: flex;
@@ -107,7 +118,7 @@ color: #2E2B26;
     font-size:30px ;
 
     color: #2E2B26;
-    margin-top:-10px;
+   
 }
 
 .concert--item-info{
@@ -128,7 +139,7 @@ color: #2E2B26;
 }
 .item--info-place{
     font-size:20px ;
-   margin-top: -20px;
+   
      
 }
 .item--info-description{
@@ -148,7 +159,7 @@ color: #2E2B26;
     display: flex;
     position: absolute;
     left:52%;
-    width: 4.5%;
+   
     top:86%;
 
 }
