@@ -11,6 +11,10 @@
    
   }
   
+.concerts-column{
+    display: flex;
+}
+
 .tour{
     display: flex;
     flex-direction: column;
