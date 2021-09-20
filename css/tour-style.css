@@ -1,17 +1,18 @@
 @import url(media.css);
 .tourDos-bloqueado {
     display: none;
-    max-width: 1080px;
+    max-width: 100%;
+    background-color: white;
     
   }
 
   .desbloqueado {
     display: flex;
-    max-width: 1080px;
+    max-width: 100%;
    
   }
 .ocultar{
-      display: none;
+    opacity: 50%;
   }
 .concerts-column{
     display: flex;
@@ -170,7 +171,8 @@ color: #2E2B26;
 
 }
 
-display: flex;
+.concerts--button-arrow{
+    display: flex;
     flex-direction: row-reverse; 
    width: 100%;
    height: 90px;
