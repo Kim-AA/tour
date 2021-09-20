@@ -58,12 +58,7 @@ function printTourListItems(item, index){
     console.log(tourConcertItems);
     
 }
-    function loadConcerts(){
-    scrollConcerts.innerHTML = "",
-    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
-    
-    }
-    loadConcerts();
+
 //     function upDateConcert() {
 
 //     concert = tourConcertItems.filter(element => element.id>0)
@@ -113,6 +108,22 @@ let pagUno= document.getElementById("pagUno");
 let pagDos= document.getElementById("pagDos");
 verMas.addEventListener("click", cambiarPagina);
 
+function ocultarPagUno(){
+    pagUno.classList.remove('tour');
+}
+
+function mostrarPagDos(){
+    // pagDos.innerHTML = "",
+    // tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    // console.log(tourConcertItems);
+
+    pagUno.classList.add('tourDos-bloqueado');
+    pagDos.classList.add('desbloqueado');
+}
+function volverAPagUno() {
+    pagDos.classList.remove('desbloqueado');
+    pagUno.classList.remove('ocultar');
+}
 
 function cambiarPagina(){
     ocultarPagUno();
@@ -120,33 +131,16 @@ function cambiarPagina(){
     // loadConcertPagDos();
 
 }
-    
+console.log(mostrarPagDos);
+let concertsColumn = document.querySelector("#concerts-column");
 
 
 
-// let verMas = document.querySelector('.tour--concerts-button');
-// let concertsColumn = document.querySelector("#concerts-column");
-
-// verMas.addEventListener("click", loadConcertsColumn);
-
-// function loadConcertsColumn(){
-//     concertsColumn.innerHTML = "",
-//     tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
-//     console.log(tourConcertItems);
-// }
-
-// loadConcertsColumn();
-// console.log(loadConcertsColumn);
-
-function ocultarPagUno(){
-    pagUno.classList.add('ocultar');
+function loadConcertsColumn(){
+    pagDos.innerHTML = "",
+    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    console.log(tourConcertItems);
 }
-function mostrarPagDos(){
 
-    pagUno.classList.remove('tourDos_bloqueado');
-    pagDos.classList.add('desbloqueado');
-}
-function volverAPagUno() {
-    pagDos.classList.remove('desbloqueado');
-    pagUno.classList.remove('ocultar');
-}
+loadConcertsColumn();
+console.log(loadConcertsColumn);
