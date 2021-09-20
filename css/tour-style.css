@@ -11,9 +11,9 @@
     max-width: 100%;
    
   }
-.ocultar{
+/* .ocultar{
     opacity: 50%;
-  }
+  } */
 .concerts-column{
     display: flex;
 }
