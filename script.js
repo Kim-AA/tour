@@ -34,9 +34,9 @@ let tourConcertItems=[
         description:"bleble",
     }
 
-]
+];
 
-function printTourListItems(item , index){
+function printTourListItems(item, index){
     scrollConcerts.innerHTML  +=`
     <div class="tour--concert-item">
         <div class="concert--item-date">
@@ -78,7 +78,7 @@ function printTourListItems(item , index){
 const slider = document.querySelector(".tour--concerts-scroll");
 
 slider.addEventListener("wheel", (event) => {
-    console.log(event)
+    console.log(event);
     event.preventDefault();
     slider.scrollLeft += event.deltaY;
 });
@@ -111,7 +111,7 @@ slider.addEventListener("mouseup", () => {
 let verMas = document.querySelector(".tour--concerts-button");
 let pagUno= document.getElementById("pagUno");
 let pagDos= document.getElementById("pagDos");
-verMas.addEventListener("click", cambiarPagina)
+verMas.addEventListener("click", cambiarPagina);
 
 
 function cambiarPagina(){
