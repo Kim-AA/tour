@@ -35,9 +35,9 @@ tourConcertItems=[
         description:"bleble",
     }
 
-]
+];
 
-function printTourListItems(item , index){
+function printTourListItems(item, index){
     scrollConcerts.innerHTML  +=`
     <div class="tour--concert-item">
         <div class="concert--item-date">
@@ -78,7 +78,7 @@ function printTourListItems(item , index){
 const slider = document.querySelector(".tour--concerts-scroll");
 
 slider.addEventListener("wheel", (event) => {
-    console.log(event)
+    console.log(event);
     event.preventDefault();
     slider.scrollLeft += event.deltaY;
 });
@@ -108,3 +108,44 @@ slider.addEventListener("mouseup", () => {
     slider.scrollLeft = scrollLeft - walk;
  });
 
+let verMas = document.querySelector(".tour--concerts-button");
+let pagUno= document.getElementById("pagUno");
+let pagDos= document.getElementById("pagDos");
+verMas.addEventListener("click", cambiarPagina);
+
+function ocultarPagUno(){
+    pagUno.classList.remove('tour');
+}
+
+function mostrarPagDos(){
+    // pagDos.innerHTML = "",
+    // tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    // console.log(tourConcertItems);
+
+    pagUno.classList.add('tourDos-bloqueado');
+    pagDos.classList.add('desbloqueado');
+}
+function volverAPagUno() {
+    pagDos.classList.remove('desbloqueado');
+    pagUno.classList.remove('ocultar');
+}
+
+function cambiarPagina(){
+    ocultarPagUno();
+    mostrarPagDos();
+    // loadConcertPagDos();
+
+}
+console.log(mostrarPagDos);
+let concertsColumn = document.querySelector("#concerts-column");
+
+
+
+function loadConcertsColumn(){
+    pagDos.innerHTML = "",
+    tourConcertItems.forEach((item, index)=>printTourListItems(item, index ));
+    console.log(tourConcertItems);
+}
+
+loadConcertsColumn();
+console.log(loadConcertsColumn);

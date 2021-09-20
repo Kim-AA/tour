@@ -173,7 +173,11 @@ color: #2E2B26;
 
 }
 .concerts--button-arrow{
+<<<<<<< HEAD
 display: flex;
+=======
+    display: flex;
+>>>>>>> 69031ba818d6da81f729486e707696a71f056d56
     flex-direction: row-reverse; 
    width: 100%;
    height: 90px;
