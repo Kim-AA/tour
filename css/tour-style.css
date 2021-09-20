@@ -169,8 +169,8 @@ color: #2E2B26;
     top:86%;
 
 }
-.concerts--button-arrow{
-    display: flex;
+
+display: flex;
     flex-direction: row-reverse; 
    width: 100%;
    height: 90px;
