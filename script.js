@@ -35,9 +35,9 @@ tourConcertItems=[
         description:"bleble",
     }
 
-]
+];
 
-function printTourListItems(item , index){
+function printTourListItems(item, index){
     scrollConcerts.innerHTML  +=`
     <div class="tour--concert-item">
         <div class="concert--item-date">
@@ -55,7 +55,7 @@ function printTourListItems(item , index){
         <img src="img/arrow-forward.png" alt="flecha">
         </div>
   
-    </div>`
+    </div>`;
     console.log(tourConcertItems);
     
 }
@@ -78,7 +78,7 @@ function printTourListItems(item , index){
 const slider = document.querySelector(".tour--concerts-scroll");
 
 slider.addEventListener("wheel", (event) => {
-    console.log(event)
+    console.log(event);
     event.preventDefault();
     slider.scrollLeft += event.deltaY;
 });
@@ -107,4 +107,5 @@ slider.addEventListener("mouseup", () => {
    const walk = (x - startX) * 2;
     slider.scrollLeft = scrollLeft - walk;
  });
+
 
