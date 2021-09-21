@@ -37,9 +37,9 @@ tourConcertItems=[
 
 ];
 
-function printTourListItems(item, index){
+function printTourListItems(item, indice){
     scrollConcerts.innerHTML  +=`
-    <div class="tour--concert-item">
+    <div onclick="abrir(${indice})" class="tour--concert-item">
         <div class="concert--item-date">
         <img class="concert-icon" src="img/Polygon 1.png" alt="triángulo">
             <h2 class="concert--item-day">${item.day}</h2>
@@ -108,60 +108,26 @@ slider.addEventListener("mouseup", () => {
     slider.scrollLeft = scrollLeft - walk;
  });
 
+ function abrir(indice){
+    showDetails(indice)
+    document.querySelector(".tour-info").style.display="flex";
+ 
+}
+ let tourInfo = document.querySelector(".tour-info");
+ function showDetails(indice){
+    tourInfo.innerHTML  =`
+    <div class="tour--concert-item">
+        <div class="concert--item-date">
+        <img class="concert-icon" src="img/Polygon 1.png" alt="triángulo">
+            <h2 class="concert--item-day">${tourConcertItems[indice].day}</h2>
+            <p class="concert--item-month">${tourConcertItems[indice].month}</p>
+        </div>
+    
+        <div class="concert--item-info">
+            <h4 class="item--info-name">${tourConcertItems[indice].name}</h4>
+            <p class="item--info-place">${tourConcertItems[indice].place}</p>
+            <p class="item--info-description">${tourConcertItems[indice].description}</p>
+        </div>
+      
+    </div>`};
 
-
- let tourInfo = document.querySelectorAll("tour-info");
- function showDetails(item, index){
-    tourInfo.innerHTML +=` <div class="tour--concert-item" id="tour--concert-item-detail">
-    <div class="concert--item-date">
-    <img class="concert-icon" src="img/Polygon 1.png" alt="triángulo">
-        <h2 class="concert--item-day">${item.day}</h2>
-        <p class="concert--item-month">${item.month}</p>
-    </div>
-
-    <div class="concert--item-info">
-        <h4 class="item--info-name">${item.name}</h4>
-        <p class="item--info-place">${item.place}</p>
-        <p class="item--info-description">${item.description}</p>
-    </div>
-    <div class="concert--arrow-button">
-    <img src="img/arrow-forward.png" alt="flecha">
-    </div>
-
-</div>`};
-
-    function loadConcertDetails(){
-        tourConcertItems.forEach((item)=>showDetails(item));};
-        loadConcertDetails();
-
-
-//    function mostrarPagDos(){
-//             pagDos.innerHTML += `
-//           <p class="concert--item-month">${item.month}</p>
-//             </div>`,
-            
-        
-//             pagUno.classList.add('tourDos-bloqueado');
-//             // pagDos.classList.add('desbloqueado');
-//         }
-
-        let concertDetail = document.getElementById("tour--concert-item-detail");
-
-
-        function printConcertDetail(indice){
-           concertDetail.innerHTML += ` <h2 class="concert--item-day">${item.day}</h2>
-           <p class="concert--item-month">${item.month}</p>
-       </div>
-   
-       <div class="concert--item-info">
-           <h4 class="item--info-name">${item.name}</h4>
-           <p class="item--info-place">${item.place}</p>
-           <p class="item--info-description">${item.description}</p>
-       </div>
-       <div class="concert--arrow-button">
-       <img src="img/arrow-forward.png" alt="flecha">
-       </div>
-   
-   </div>` 
-        }
-    printConcertDetail();

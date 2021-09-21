@@ -40,8 +40,9 @@
     background-color: white;
     width: 100%;
 }
-.tour-info{
+div.tour-info{
     display: flex;
+    width: 100%;
 }
 
 .tour--info-title{
@@ -179,6 +180,7 @@ color: #2E2B26;
     top:86%;
 
 }
+
 .concerts--button-arrow{
     display: flex;
     flex-direction: row-reverse; 
