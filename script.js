@@ -111,14 +111,20 @@ slider.addEventListener("mouseup", () => {
  function abrir(indice){
     showDetails(indice)
     document.querySelector(".tourDos").style.display="flex";
- 
+   
 }
+function cerrar(){
+    document.querySelector(".tourDos").style.display="none";
+}
+
  let tourInfo = document.querySelector(".tourDos");
  function showDetails(indice){
     tourInfo.innerHTML  =`
 
-    <div class="tourDos--concert-item">
-        <div class="concert--item-date">
+    <div class="tourDos--concert-item" <img class="background-concert" src="./img/concert.jpg">
+    <a onclick="cerrar(${indice})"><img class="close" src="./img/eliminar-cruz.png"></a>
+
+        <div class="concert--item-date tourDos--item-date">
             <h2 class="concert--item-day">${tourConcertItems[indice].day}</h2>
             <p class="concert--item-month">${tourConcertItems[indice].month}</p>
         </div>
@@ -130,6 +136,7 @@ slider.addEventListener("mouseup", () => {
         </div>
       
     </div>`};
+
 
     let pagDos= document.getElementById("pagDos");
     verPaginaDos.addEventListener("click", cambiarPagina)

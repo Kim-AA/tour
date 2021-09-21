@@ -1,42 +1,44 @@
 @import url(media.css);
-/* .tourDos-bloqueado {
-    display: none;
-    max-width: 100%;
-    background-color: white;
-   
-    
-  } */
-
+body{
+    margin: 0%;
+}
 .tourDos{
+    font-family: 'Poppins', sans-serif;
     display: none;
-    position: absolute;
     background: rgb(35 35 35 / 80%);
-    padding: 30%;
+    position: relative;
+    margin: 0%;
+    padding: 100%;
+    padding-bottom: 20%;
+    justify-content: center;
+    align-content: center;
 }
 
 .tourDos--concert-item{
+    display: flex;
+    align-items: center;
+    align-content:center;
     background-color: white;
-    padding: 20%;
-    margin-left: -5%;
-}
-/* 
-#paddingTourDos{
-    color: red;
-} */
-
-  /* .desbloqueado {
-    display: flex;
-    max-width: 100%;
+    padding: 10%;
+    position: absolute;
+    top: 5%;
+    border-radius: 5%;
+    
    
-  }
-/* .ocultar{
-    opacity: 50%;
-  } */
-
-.tourDos{
-    display: flex;
-    flex-direction: column;
-    background-color: lightcoral;
+    
+}
+.background-concert{
+    z-index: 2;
+}
+.tourDos--item-date{
+margin-top: -10px;
+}
+.close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 25px;
+    right: 25px;
     
 }
 .concerts-column{
@@ -50,6 +52,12 @@
     font-family: 'Poppins', sans-serif;
     width: 100%;
     position:absolute;
+    padding-left: 20%;
+  
+    margin: 20px;
+}
+.block-tour{
+   width:1080px;
 
 }
 .tour--info{
@@ -195,12 +203,13 @@ color: #2E2B26;
     padding-left: 50px;
     margin-right: 50px;
     border-bottom: 2px solid rgb(139, 139, 139);
+
 }
 .tour--concerts-button{
     
     display: flex;
     position: absolute;
-    left:52%;
+    left:60%;
    
     top:86%;
 
@@ -217,6 +226,7 @@ color: #2E2B26;
    background-color:#2E2E2E;
    color: white;
    font-size: 12px;
+   border-radius: 10%;
 }
 
 
