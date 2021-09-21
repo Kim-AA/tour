@@ -1,11 +1,11 @@
 @import url(media.css);
-.tourDos-bloqueado {
+/* .tourDos-bloqueado {
     display: none;
     max-width: 100%;
     background-color: white;
    
     
-  }
+  } */
 
 .tourDos{
     display: none;
@@ -32,20 +32,25 @@
 /* .ocultar{
     opacity: 50%;
   } */
+
+.tourDos{
+    display: flex;
+    flex-direction: column;
+    background-color: lightcoral;
+    
+}
 .concerts-column{
-    display: none;
+    display:flex;
    
 }
 
 .tour{
-    display: flex;
+    display:flex;
     flex-direction: column;
     font-family: 'Poppins', sans-serif;
     width: 100%;
     position:absolute;
-    padding: 20px;
-    margin: 20px;
-  
+
 }
 .tour--info{
     display: flex;

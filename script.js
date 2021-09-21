@@ -56,7 +56,7 @@ function printTourListItems(item, indice){
         </div>
   
     </div>`;
-    console.log(tourConcertItems);
+    
     
 }
     function loadConcerts(){
@@ -83,7 +83,7 @@ slider.addEventListener("wheel", (event) => {
     slider.scrollLeft += event.deltaY;
 });
 
-// console.log(concert);
+
 
 
 let isDown = false;
