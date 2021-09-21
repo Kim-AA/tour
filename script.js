@@ -131,3 +131,21 @@ slider.addEventListener("mouseup", () => {
       
     </div>`};
 
+    let pagDos= document.getElementById("pagDos");
+    verPaginaDos.addEventListener("click", cambiarPagina)
+    
+    function ocultarPagUno(){
+        pagUno.classList.remove('tour');
+     
+    }
+    
+    function mostrarPagDos(){
+        pagDos.innerHTML += `
+      <p class="concert--item-month">${item.month}</p>
+        </div>`,
+        
+    
+        pagUno.classList.add('tourDos-bloqueado');
+        // pagDos.classList.add('desbloqueado');
+    }
+    console.log(pagDos)
