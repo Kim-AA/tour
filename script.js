@@ -110,15 +110,15 @@ slider.addEventListener("mouseup", () => {
 
  function abrir(indice){
     showDetails(indice)
-    document.querySelector(".tour-info").style.display="flex";
+    document.querySelector(".tourDos").style.display="flex";
  
 }
- let tourInfo = document.querySelector(".tour-info");
+ let tourInfo = document.querySelector(".tourDos");
  function showDetails(indice){
     tourInfo.innerHTML  =`
-    <div class="tour--concert-item">
+
+    <div class="tourDos--concert-item">
         <div class="concert--item-date">
-        <img class="concert-icon" src="img/Polygon 1.png" alt="triángulo">
             <h2 class="concert--item-day">${tourConcertItems[indice].day}</h2>
             <p class="concert--item-month">${tourConcertItems[indice].month}</p>
         </div>

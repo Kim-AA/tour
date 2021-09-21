@@ -7,6 +7,23 @@
     
   }
 
+.tourDos{
+    display: none;
+    position: absolute;
+    background: rgb(35 35 35 / 80%);
+    padding: 30%;
+}
+
+.tourDos--concert-item{
+    background-color: white;
+    padding: 20%;
+    margin-left: -5%;
+}
+/* 
+#paddingTourDos{
+    color: red;
+} */
+
   /* .desbloqueado {
     display: flex;
     max-width: 100%;
@@ -38,6 +55,14 @@
 div.tour-info{
     display: flex;
     width: 100%;
+    margin: 0%;
+    display: flex;
+    position: absolute;
+    background-color: rgb(205 204 204 / 80%);
+    padding: 5%;
+    top: 20%;
+    left: 6%;
+    max-width: 50%;
 }
 
 .tour--info-title{
