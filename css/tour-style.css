@@ -35,7 +35,10 @@
     background-color: white;
     width: 100%;
 }
-
+div.tour-info{
+    display: flex;
+    width: 100%;
+}
 
 .tour--info-title{
     font-size:300px;
