@@ -120,8 +120,8 @@ function cerrar(){
  let tourInfo = document.querySelector(".tourDos");
  function showDetails(indice){
     tourInfo.innerHTML  =`
-
-    <div class="tourDos--concert-item" <img class="background-concert" src="./img/concert.jpg">
+    <img class="background-concert" src="./img/concert.jpg">
+    <div class="tourDos--concert-item">
     <a onclick="cerrar(${indice})"><img class="close" src="./img/eliminar-cruz.png"></a>
 
         <div class="concert--item-date tourDos--item-date">
